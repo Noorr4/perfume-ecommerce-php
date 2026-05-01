@@ -26,7 +26,7 @@ button {
     cursor: pointer;
 }
 
-.product-card, .cart-item, .card {
+.product-card, .cart-item,.card {
     border: 1px solid #ccc;
     padding: 15px;
     margin: 15px;
