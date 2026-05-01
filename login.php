@@ -5,6 +5,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <?php
+if(isset($_GET["msg"])) {
+    echo "Registration Successful! Please login.";
+}
+?>
 
 <nav>
     <a href="index.php">Home</a>
