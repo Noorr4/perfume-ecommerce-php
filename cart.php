@@ -11,6 +11,7 @@
     <a href="products.php">Products</a>
     <a href="cart.php">Cart</a>
     <a href="login.php">Login</a>
+    <a href="logout.php">Logout</a>
 </nav>
 
 <div class="container">

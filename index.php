@@ -5,12 +5,20 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+<?php
+session_start();
+?>
+<?php
+if(isset($_SESSION["user"])) {
+    echo "Welcome " . $_SESSION["user"];
+}
+?>
 <nav>
     <a href="index.php">Home</a>
     <a href="products.php">Products</a>
     <a href="about.php">About</a>
     <a href="login.php">Login</a>
+    <a href="logout.php">Logout</a>
 </nav>
 
 <div class="container">
