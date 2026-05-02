@@ -46,7 +46,6 @@ if(isset($_POST["login"]))
 
 <div class="container">
     <h2>Login</h2>
-
     <form method="POST" action="">
         <label>Name:</label>
         <input type="text" name="username" placeholder="Enter Your Name" required>
