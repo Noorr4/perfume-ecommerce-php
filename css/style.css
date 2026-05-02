@@ -1,0 +1,33 @@
+body {
+    font-family: Arial;
+    background-color: #eb4c4c;
+    text-align: center;
+}
+
+nav {
+    background: black;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.product-card, .cart-item, .card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 15px;
+    display: inline-block;
+}
