@@ -4,7 +4,9 @@
     <title>Login</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body style="background-image: url('images/loginpage.jpeg');background-size: cover; background-position: center;">
+    
+<nav>
 
 if(isset($_GET["msg"])) {
     echo "Registration Successful! Please login.";
