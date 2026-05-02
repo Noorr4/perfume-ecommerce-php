@@ -1,3 +1,28 @@
+<?php
+session_start();
+
+// Initialize cart
+if(!isset($_SESSION["cart"])) {
+    $_SESSION["cart"] = [];
+}
+
+// ADD ITEM
+if(isset($_POST["add"])) {
+    $item = [
+        "name" => $_POST["name"],
+        "price" => $_POST["price"]
+    ];
+    $_SESSION["cart"][] = $item;
+}
+
+// REMOVE ITEM
+if(isset($_GET["remove"])) {
+    $index = $_GET["remove"];
+    unset($_SESSION["cart"][$index]);
+    $_SESSION["cart"] = array_values($_SESSION["cart"]); // reindex
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,22 +35,30 @@
     <a href="index.php">Home</a>
     <a href="products.php">Products</a>
     <a href="cart.php">Cart</a>
-    <a href="login.php">Login</a>
-<<<<<<< HEAD
-=======
-    <a href="logout.php">Logout</a>
->>>>>>> 5ca300eeffcd71cec44712789a5b95e12e31432e
 </nav>
 
-<div class="container">
-    <h1>Your Cart</h1>
+<h1>Your Cart</h1>
 
-    <div class="cart-item">
-        <h3>Luxury Oud</h3>
-        <p>$50</p>
-        <button>Remove</button>
-    </div>
-</div>
+<?php
+$total = 0;
+
+if(!empty($_SESSION["cart"])) {
+    foreach($_SESSION["cart"] as $index => $item) {
+        $total += $item["price"];
+
+        echo "<div class='cart-item'>";
+        echo "<h3>".$item["name"]."</h3>";
+        echo "<p>$".$item["price"]."</p>";
+        echo "<a href='cart.php?remove=".$index."'><button>Remove</button></a>";
+        echo "</div>";
+    }
+
+    echo "<h2>Total: $".$total."</h2>";
+
+} else {
+    echo "<p>Cart is empty</p>";
+}
+?>
 
 </body>
 </html>
