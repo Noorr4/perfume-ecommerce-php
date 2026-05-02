@@ -5,10 +5,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<<<<<<< HEAD
 
-=======
-    <?php
 if(isset($_GET["msg"])) {
     echo "Registration Successful! Please login.";
 }
@@ -39,32 +36,31 @@ if(isset($_POST["login"]))
     }
 
 ?>
->>>>>>> 5ca300eeffcd71cec44712789a5b95e12e31432e
+
 <nav>
     <a href="index.php">Home</a>
     <a href="products.php">Products</a>
     <a href="about.php">About</a>
     <a href="login.php">Login</a>
-<<<<<<< HEAD
+
 </nav>
 
 <div class="container">
     <h2>Login</h2>
 
     <form method="POST" action="">
-=======
+
     <a href="logout.php">Logout</a>
 </nav>
 
 <div class="container">
-    <img src="images/loginpage.jpeg">
     <h2>Login</h2>
    
     <form method="POST" action="">
         <label>Name:</label>
         <input type="text" name="username" placeholder="Enter Your Name" required>
         <br><br>
->>>>>>> 5ca300eeffcd71cec44712789a5b95e12e31432e
+
         <label>Email:</label>
         <input type="email" name="email" placeholder="Enter your email" required>
 
@@ -75,11 +71,10 @@ if(isset($_POST["login"]))
 
         <br><br>
 
-<<<<<<< HEAD
         <button type="submit">Login</button>
-=======
+
         <button type="submit" name="login">Login</button>
->>>>>>> 5ca300eeffcd71cec44712789a5b95e12e31432e
+ 
     </form>
 </div>
 
