@@ -1,3 +1,42 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.php">Home</a>
+    <a href="products.php">Products</a>
+    <a href="about.php">About</a>
+    <a href="login.php">Login</a>
+</nav>
+
+<div class="container">
+    <h1>Our Products</h1>
+
+    <div class="product-card">
+        <img src="images/perfume1.jpg" width="150">
+        <h3>Luxury Oud</h3>
+        <p>$50</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/perfume2.jpg" width="150">
+        <h3>Rose Essence</h3>
+        <p>$40</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/perfume3.jpg" width="150">
+        <h3>Fresh Citrus</h3>
+        <p>$35</p>
+        <button>Add to Cart</button>
+=======
 <?php
 // You can add PHP code here later (like database connection)
 ?>
@@ -44,10 +83,13 @@
         <button onclick="showDetails('Long lasting powerful scent')">
             View Details
         </button>
+>>>>>>> 5ca300eeffcd71cec44712789a5b95e12e31432e
     </div>
 
 </div>
 
+<<<<<<< HEAD
+=======
 <!-- ===== WOMEN SECTION ===== -->
 <h2>Women Perfumes</h2>
 <div class="container">
@@ -99,5 +141,6 @@
 <!-- JavaScript -->
 <script src="products.js"></script>
 
+>>>>>>> 5ca300eeffcd71cec44712789a5b95e12e31432e
 </body>
 </html>

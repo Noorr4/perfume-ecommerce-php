@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <?php
+
 if(isset($_GET["msg"])) {
     echo "Registration Successful! Please login.";
 }
@@ -36,11 +36,20 @@ if(isset($_POST["login"]))
     }
 
 ?>
+
 <nav>
     <a href="index.php">Home</a>
     <a href="products.php">Products</a>
     <a href="about.php">About</a>
     <a href="login.php">Login</a>
+
+</nav>
+
+<div class="container">
+    <h2>Login</h2>
+
+    <form method="POST" action="">
+
     <a href="logout.php">Logout</a>
 </nav>
 
@@ -51,6 +60,7 @@ if(isset($_POST["login"]))
         <label>Name:</label>
         <input type="text" name="username" placeholder="Enter Your Name" required>
         <br><br>
+
         <label>Email:</label>
         <input type="email" name="email" placeholder="Enter your email" required>
 
@@ -61,7 +71,10 @@ if(isset($_POST["login"]))
 
         <br><br>
 
+        <button type="submit">Login</button>
+
         <button type="submit" name="login">Login</button>
+ 
     </form>
 </div>
 

@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<<<<<<< HEAD
+=======
 <?php
 $conn = mysqli_connect("localhost","root","123456789","perfume_db");
 
@@ -31,13 +33,17 @@ if(isset($_POST["register"]))
     }
 }
 ?>
+>>>>>>> 5ca300eeffcd71cec44712789a5b95e12e31432e
 
 <nav>
     <a href="index.php">Home</a>
     <a href="products.php">Products</a>
     <a href="about.php">About</a>
     <a href="login.php">Login</a>
+<<<<<<< HEAD
+=======
     <a href="logout.php">Logout</a>
+>>>>>>> 5ca300eeffcd71cec44712789a5b95e12e31432e
 </nav>
 
 <div class="container">
@@ -59,7 +65,11 @@ if(isset($_POST["register"]))
 
         <br><br>
 
+<<<<<<< HEAD
+        <button type="submit">Register</button>
+=======
         <button type="submit" name="register">Register</button>
+>>>>>>> 5ca300eeffcd71cec44712789a5b95e12e31432e
     </form>
 </div>
 

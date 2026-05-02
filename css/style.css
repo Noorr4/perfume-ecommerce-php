@@ -1,8 +1,13 @@
 body {
     font-family: Arial;
+<<<<<<< HEAD
+    background-color: #eb4c4c;
+    text-align: center;
+=======
     background-color: red;
     text-align: center;
     
+>>>>>>> 5ca300eeffcd71cec44712789a5b95e12e31432e
 }
 
 nav {
@@ -11,10 +16,16 @@ nav {
 }
 
 nav a {
+<<<<<<< HEAD
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+=======
     color: pink;
     margin: 10px;
     text-decoration: none;
    
+>>>>>>> 5ca300eeffcd71cec44712789a5b95e12e31432e
 }
 
 .container {
@@ -27,11 +38,18 @@ button {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
+.product-card, .cart-item, .card {
+=======
 .product-card, .cart-item,.card {
+>>>>>>> 5ca300eeffcd71cec44712789a5b95e12e31432e
     border: 1px solid #ccc;
     padding: 15px;
     margin: 15px;
     display: inline-block;
+<<<<<<< HEAD
+}
+=======
 }
 
 body {
@@ -107,3 +125,4 @@ button {
     cursor: pointer;
     margin-top: 10px;
 }
+>>>>>>> 5ca300eeffcd71cec44712789a5b95e12e31432e
