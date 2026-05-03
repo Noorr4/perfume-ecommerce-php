@@ -34,7 +34,7 @@ if(isset($_POST["login"]))
     <link rel="stylesheet" href="css/style.css">
 </head>
 <<<<<<< HEAD
-<body style="background-image:url('images/loginpage');">
+<body>
 
 if(isset($_GET["msg"])) {
     echo "Registration Successful! Please login.";
