@@ -5,27 +5,20 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<<<<<<< HEAD
 
-=======
 <?php
 session_start();
-?>
-<?php
 if(isset($_SESSION["user"])) {
     echo "Welcome " . $_SESSION["user"];
 }
 ?>
->>>>>>> 5ca300eeffcd71cec44712789a5b95e12e31432e
+
 <nav>
     <a href="index.php">Home</a>
     <a href="products.php">Products</a>
     <a href="about.php">About</a>
     <a href="login.php">Login</a>
-<<<<<<< HEAD
-=======
     <a href="logout.php">Logout</a>
->>>>>>> 5ca300eeffcd71cec44712789a5b95e12e31432e
 </nav>
 
 <div class="container">
