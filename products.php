@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body style="background-image: url('images/perfume1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+<body style="background-image: url('images/unisex1.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
  
 
 <nav class="navbar">
