@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body style="background-image: url('images/loginpage.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+ 
 
 <nav class="navbar">
     <a href="index.php">Home</a>
