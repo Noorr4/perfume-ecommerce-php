@@ -33,7 +33,7 @@ if(isset($_POST["login"]))
     <title>Login</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<<<<<<< HEAD
+ <body style="background-image: url('images/loginpage.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
 <body>
 
 if(isset($_GET["msg"])) {
@@ -66,17 +66,16 @@ if(isset($_POST["login"]))
     }
 
 ?>
-
-=======
+ 
 <body>
 
->>>>>>> 7b4b64d14f14747d10566450d05a164c949ee124
+ 
 <nav>
     <a href="index.php">Home</a>
     <a href="products.php">Products</a>
     <a href="about.php">About</a>
     <a href="login.php">Login</a>
-<<<<<<< HEAD
+ 
 
 </nav>
 
@@ -85,19 +84,17 @@ if(isset($_POST["login"]))
 
     <form method="POST" action="">
 
-=======
->>>>>>> 7b4b64d14f14747d10566450d05a164c949ee124
+ 
     <a href="logout.php">Logout</a>
 </nav>
 
 <div class="container">
     <h2>Login</h2>
-
-<<<<<<< HEAD
+ 
     <form method="POST" action="">
-=======
+ 
     <form method="POST">
->>>>>>> 7b4b64d14f14747d10566450d05a164c949ee124
+ 
         <label>Name:</label>
         <input type="text" name="username" required>
 
@@ -113,14 +110,14 @@ if(isset($_POST["login"]))
 
         <br><br>
 
-<<<<<<< HEAD
+ 
         <button type="submit">Login</button>
 
         <button type="submit" name="login">Login</button>
  
-=======
+ 
         <button type="submit" name="login">Login</button>
->>>>>>> 7b4b64d14f14747d10566450d05a164c949ee124
+ 
     </form>
 </div>
 
