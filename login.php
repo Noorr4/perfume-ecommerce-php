@@ -1,24 +1,27 @@
 <?php
 session_start();
-$conn = mysqli_connect("localhost","root","123456789","perfume_db");
+$conn=mysqli_connect("localhost","root","123456789","perfume_db");
 
 if(isset($_GET["msg"])) {
     echo "Registration Successful! Please login.";
 }
 
-if(isset($_POST["login"])) {
-    $email = $_POST["email"];
-    $password = $_POST["password"];
-    $name = $_POST["username"];
+if(isset($_POST["login"]))
+{
+    $email=$_POST["email"];
+    $password=$_POST["password"];
+    $name=$_POST["username"];
 
-    $query = "SELECT * FROM users WHERE email='$email' AND password='$password' AND username='$name'";
-    $result = mysqli_query($conn,$query);
+    $query="SELECT * FROM users WHERE email='$email' AND password='$password' AND username='$name'";
+    $result=mysqli_query($conn,$query);
     
-    if(mysqli_num_rows($result)>0) {
-        $_SESSION["user"] = $name;
+    if(mysqli_num_rows($result)>0)
+    {
+        $_SESSION["user"]=$name;
         header("Location:index.php");
         exit();
-    } else {
+    }
+    else{
         echo "Invalid Email or Password";
     }
 }
@@ -30,20 +33,66 @@ if(isset($_POST["login"])) {
     <title>Login</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+ <body style="background-image: url('images/loginpage.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+if(isset($_GET["msg"])) {
+    echo "Registration Successful! Please login.";
+}
+?>
+<?php
+session_start();
+$conn=mysqli_connect("localhost","root","123456789","perfume_db");
 
-<body style="background-image: url('images/loginpage.jpeg'); background-size: cover; background-position: center;">
+if(isset($_POST["login"]))
+    {
+        $email=$_POST["email"];
+        $password=$_POST["password"];
+        $name=$_POST["username"];
 
+        $query="select *from users where email='$email' and password='$password' and username='$name'";
+
+        $result=mysqli_query($conn,$query);
+        
+        if(mysqli_num_rows($result)>0)
+            {
+                $_SESSION["user"]=$name;
+                header("Location:index.php");
+                exit();
+            }
+            else{
+                echo "Invalid Email or Password";
+            }
+    }
+
+?>
+ 
+<body>
+
+ 
 <nav>
     <a href="index.php">Home</a>
     <a href="products.php">Products</a>
     <a href="about.php">About</a>
     <a href="login.php">Login</a>
+ 
+
 </nav>
 
 <div class="container">
     <h2>Login</h2>
 
+    <form method="POST" action="">
+
+ 
+    <a href="logout.php">Logout</a>
+</nav>
+
+<div class="container">
+    <h2>Login</h2>
+ 
+    <form method="POST" action="">
+ 
     <form method="POST">
+ 
         <label>Name:</label>
         <input type="text" name="username" required>
 
@@ -59,7 +108,14 @@ if(isset($_POST["login"])) {
 
         <br><br>
 
+ 
+        <button type="submit">Login</button>
+
         <button type="submit" name="login">Login</button>
+ 
+ 
+        <button type="submit" name="login">Login</button>
+ 
     </form>
 </div>
 
